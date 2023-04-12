@@ -1,9 +1,12 @@
 import React from "react";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <>
-      <div>Cheesy Slice</div>
+      <div>
+        <Navbar />
+      </div>
     </>
   );
 }
