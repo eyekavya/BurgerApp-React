@@ -4,7 +4,7 @@ export const StyledPizza = styled.section`
   .flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
   }
 
   .tagline {
@@ -26,5 +26,10 @@ export const StyledPizza = styled.section`
     font-weight: 400;
     font-style: italic;
     margin-top: 1rem;
+  }
+
+  .pizza-base-img {
+    margin-top: 3rem;
+    margin-right: 3rem;
   }
 `;
