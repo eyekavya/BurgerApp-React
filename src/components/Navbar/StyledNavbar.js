@@ -9,7 +9,7 @@ export const StyledNavbar = styled.section`
   .title {
     font-family: DynaPuff, cursive;
     color: #fff;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 700;
   }
 
