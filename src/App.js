@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Tagline from "./components/Tagline/Tagline";
-import Pizza from "./components/Pizza/Pizza";
+import Navbar from "./components/Navbar/Navbar.js";
+import Tagline from "./components/Tagline/Tagline.js";
+import Pizza from "./components/Pizza/Pizza.js";
 import "./App.css";
 
 function App() {
