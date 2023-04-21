@@ -1,5 +1,14 @@
+.wrapper {
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+}
+
+.sub-heading {
+  font-family: "Poppins", sans-serif;
 }

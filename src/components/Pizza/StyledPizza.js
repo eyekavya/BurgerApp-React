@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledPizza = styled.section`
   .pizza-base-img {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-right: 3rem;
   }
 `;
