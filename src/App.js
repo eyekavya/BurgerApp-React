@@ -5,6 +5,7 @@ import Pizza from "./components/Pizza/Pizza.js";
 import "./App.css";
 import Topping from "./components/Topping/Topping.js";
 import Size from "./components/Size/Size.js";
+import Cheese from "./components/Cheese/Cheese.js";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Tagline />
             <Topping />
             <Size />
+            <Cheese />
           </div>
           <div className="image-section">
             <Pizza />
