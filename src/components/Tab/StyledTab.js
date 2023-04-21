@@ -30,9 +30,4 @@ export const StyledTab = styled.section`
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-
-  .topping-btn:active,
-  .size-btn:active,
-  .cheese-btn:active {
-  }
 `;
