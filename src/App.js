@@ -6,6 +6,7 @@ import "./App.css";
 import Topping from "./components/Topping/Topping.js";
 import Size from "./components/Size/Size.js";
 import Cheese from "./components/Cheese/Cheese.js";
+import Tab from "./components/Tab/Tab.js";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <div className="flex">
           <div className="content-section">
             <Tagline />
+            <Tab />
             <Topping />
             <Size />
             <Cheese />
