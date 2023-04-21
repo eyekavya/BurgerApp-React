@@ -12,7 +12,7 @@ function Navbar() {
               Cheesy Slice
             </a>
             <div>
-              <i class="fa-solid fa-cart-shopping cart"></i>
+              <i className="fa-solid fa-cart-shopping cart"></i>
             </div>
           </div>
         </nav>
