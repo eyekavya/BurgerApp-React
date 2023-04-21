@@ -8,42 +8,42 @@ function Size() {
         <h3 className="sub-heading">Choose Size</h3>
         <div className="flex-size">
           <div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault2"
                 checked
               />
-              <label class="form-check-label" for="flexRadioDefault2">
-                Junior
+              <label className="form-check-label" for="flexRadioDefault2">
+                Little Buddy
               </label>
             </div>
           </div>
           <div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault1"
               />
-              <label class="form-check-label" for="flexRadioDefault1">
-                Mega
+              <label className="form-check-label" for="flexRadioDefault1">
+                Happy Medium
               </label>
             </div>
           </div>
           <div>
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault1"
               />
-              <label class="form-check-label" for="flexRadioDefault1">
-                Monster
+              <label className="form-check-label" for="flexRadioDefault1">
+                Super Yum
               </label>
             </div>
           </div>
