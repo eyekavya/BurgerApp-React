@@ -17,7 +17,7 @@ function Size() {
                 checked
               />
               <label class="form-check-label" for="flexRadioDefault2">
-                Junior
+                Little Buddy
               </label>
             </div>
           </div>
@@ -30,7 +30,7 @@ function Size() {
                 id="flexRadioDefault1"
               />
               <label class="form-check-label" for="flexRadioDefault1">
-                Mega
+                Happy Medium
               </label>
             </div>
           </div>
@@ -43,7 +43,7 @@ function Size() {
                 id="flexRadioDefault1"
               />
               <label class="form-check-label" for="flexRadioDefault1">
-                Monster
+                Super Yum
               </label>
             </div>
           </div>
