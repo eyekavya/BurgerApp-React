@@ -22,12 +22,15 @@ export const StyledTab = styled.section`
   .topping-btn {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #fcbd3f;
     color: #000;
   }
 
   .cheese-btn {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+  }
+
+  .active {
+    background-color: #fcbd3f;
   }
 `;

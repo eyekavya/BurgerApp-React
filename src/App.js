@@ -27,10 +27,11 @@ function App() {
         <div className="flex">
           <div className="content-section">
             <Tagline />
-            <Tab setActiveTab={setActiveTab} />
+            <Tab setActiveTab={setActiveTab} activeTab={activeTab} />
             {activeTab === "toppings" && (
               <Topping toppings={toppings} setToppings={setToppings} />
             )}
+
             {activeTab === "sizes" && <Size />}
             {activeTab === "cheese" && <Cheese />}
           </div>
