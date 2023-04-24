@@ -14,84 +14,29 @@ function Pizza({ toppings }) {
   return (
     <StyledPizza>
       <div style={{ position: "relative" }}>
-        <img
-          src={pizzaBase}
-          alt="pizza base"
-          className="pizza-base-img"
-          style={{
-            position: "absolute",
-            zIndex: "-999",
-            right: "0",
-          }}
-        />
+        <img src={pizzaBase} alt="pizza base" className="pizza-img base-img" />
 
         {toppings.paneer && (
-          <img
-            src={paneer}
-            alt="paneer"
-            className="pizza-base-img"
-            style={{
-              position: "absolute",
-              zIndex: "0",
-              right: "60px",
-              top: "16px",
-            }}
-          />
+          <img src={paneer} alt="paneer" className="pizza-img topping-img" />
         )}
 
         {toppings.corn && (
-          <img
-            src={corn}
-            alt="corn"
-            className="pizza-base-img"
-            style={{
-              position: "absolute",
-              zIndex: "0",
-              right: "60px",
-              top: "16px",
-            }}
-          />
+          <img src={corn} alt="corn" className="pizza-img topping-img" />
         )}
 
         {toppings.onion && (
-          <img
-            src={onion}
-            alt="onion"
-            className="pizza-base-img"
-            style={{
-              position: "absolute",
-              zIndex: "0",
-              right: "60px",
-              top: "16px",
-            }}
-          />
+          <img src={onion} alt="onion" className="pizza-img topping-img" />
         )}
 
         {toppings.tomato && (
-          <img
-            src={tomato}
-            alt="tomato"
-            className="pizza-base-img"
-            style={{
-              position: "absolute",
-              zIndex: "0",
-              right: "60px",
-              top: "16px",
-            }}
-          />
+          <img src={tomato} alt="tomato" className="pizza-img topping-img" />
         )}
 
         {toppings.mushroom && (
           <img
             src={mushroom}
             alt="mushroom"
-            className="pizza-base-img"
-            style={{
-              position: "absolute",
-              zIndex: "0",
-              right: "60px",
-              top: "16px",
-            }}
+            className="pizza-img topping-img"
           />
         )}
 
@@ -99,13 +44,7 @@ function Pizza({ toppings }) {
           <img
             src={redPepper}
             alt="redpepper"
-            className="pizza-base-img"
-            style={{
-              position: "absolute",
-              zIndex: "0",
-              right: "60px",
-              top: "16px",
-            }}
+            className="pizza-img topping-img"
           />
         )}
 
@@ -113,13 +52,7 @@ function Pizza({ toppings }) {
           <img
             src={capsicum}
             alt="capsicum"
-            className="pizza-base-img"
-            style={{
-              position: "absolute",
-              zIndex: "0",
-              right: "60px",
-              top: "16px",
-            }}
+            className="pizza-img topping-img"
           />
         )}
 
@@ -127,13 +60,7 @@ function Pizza({ toppings }) {
           <img
             src={jalapeno}
             alt="jalapeno"
-            className="pizza-base-img"
-            style={{
-              position: "absolute",
-              zIndex: "0",
-              right: "60px",
-              top: "16px",
-            }}
+            className="pizza-img topping-img"
           />
         )}
       </div>
