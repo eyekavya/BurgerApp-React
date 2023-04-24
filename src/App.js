@@ -19,6 +19,7 @@ function App() {
     capsicum: false,
     jalapeno: false,
   });
+  const [activeTab, setActiveTab] = useState("toppings");
   return (
     <>
       <div>
@@ -26,10 +27,12 @@ function App() {
         <div className="flex">
           <div className="content-section">
             <Tagline />
-            <Tab />
-            <Topping toppings={toppings} setToppings={setToppings} />
-            <Size />
-            <Cheese />
+            <Tab setActiveTab={setActiveTab} />
+            {activeTab === "toppings" && (
+              <Topping toppings={toppings} setToppings={setToppings} />
+            )}
+            {activeTab === "sizes" && <Size />}
+            {activeTab === "cheese" && <Cheese />}
           </div>
           <div className="image-section">
             <Pizza toppings={toppings} />
