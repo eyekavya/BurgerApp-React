@@ -32,7 +32,7 @@ function App() {
             <Cheese />
           </div>
           <div className="image-section">
-            <Pizza />
+            <Pizza toppings={toppings} />
           </div>
         </div>
       </div>
