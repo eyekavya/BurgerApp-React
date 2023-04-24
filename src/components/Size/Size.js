@@ -13,10 +13,9 @@ function Size() {
                 className="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
-                id="flexRadioDefault2"
-                checked
+                id="flexRadioDefault1"
               />
-              <label className="form-check-label" for="flexRadioDefault2">
+              <label className="form-check-label" for="flexRadioDefault1">
                 Little Buddy
               </label>
             </div>

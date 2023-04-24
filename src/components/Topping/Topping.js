@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyledTopping } from "./StyledTopping";
 
-function Topping() {
+function Topping({ toppings, setToppings }) {
+  const updateTopping = (event) => {
+    setToppings({ ...toppings, [event.target.name]: event.target.checked });
+  };
+
   return (
     <StyledTopping>
       <div className="wrapper">
@@ -12,8 +16,11 @@ function Topping() {
               <input
                 className="form-check-input"
                 type="checkbox"
-                value="paneer"
                 id="flexCheckDefault"
+                // Point to be noted my lord
+                checked={toppings.paneer}
+                name="paneer"
+                onChange={updateTopping}
               />
               <label className="form-check-label" for="flexCheckDefault">
                 Paneer
@@ -24,8 +31,10 @@ function Topping() {
               <input
                 className="form-check-input"
                 type="checkbox"
-                value="corn"
                 id="flexCheckDefault"
+                checked={toppings.corn}
+                name="corn"
+                onChange={updateTopping}
               />
               <label className="form-check-label" for="flexCheckDefault">
                 Corn
@@ -36,8 +45,10 @@ function Topping() {
               <input
                 className="form-check-input"
                 type="checkbox"
-                value="onion"
                 id="flexCheckDefault"
+                checked={toppings.onion}
+                name="onion"
+                onChange={updateTopping}
               />
               <label className="form-check-label" for="flexCheckDefault">
                 Onion
@@ -48,8 +59,10 @@ function Topping() {
               <input
                 className="form-check-input"
                 type="checkbox"
-                value="tomato"
                 id="flexCheckDefault"
+                checked={toppings.tomato}
+                name="tomato"
+                onChange={updateTopping}
               />
               <label className="form-check-label" for="flexCheckDefault">
                 Tomato
@@ -61,8 +74,10 @@ function Topping() {
               <input
                 className="form-check-input"
                 type="checkbox"
-                value="mushroom"
                 id="flexCheckDefault"
+                checked={toppings.mushroom}
+                name="mushroom"
+                onChange={updateTopping}
               />
               <label className="form-check-label" for="flexCheckDefault">
                 Mushroom
@@ -73,8 +88,10 @@ function Topping() {
               <input
                 className="form-check-input"
                 type="checkbox"
-                value="redpepper"
                 id="flexCheckDefault"
+                checked={toppings.redpepper}
+                name="redpepper"
+                onChange={updateTopping}
               />
               <label className="form-check-label" for="flexCheckDefault">
                 Red Pepper
@@ -85,8 +102,10 @@ function Topping() {
               <input
                 className="form-check-input"
                 type="checkbox"
-                value="capsicum"
                 id="flexCheckDefault"
+                checked={toppings.capsicum}
+                name="capsicum"
+                onChange={updateTopping}
               />
               <label className="form-check-label" for="flexCheckDefault">
                 Capsicum
@@ -97,8 +116,10 @@ function Topping() {
               <input
                 className="form-check-input"
                 type="checkbox"
-                value="jalapeno"
                 id="flexCheckDefault"
+                checked={toppings.jalapeno}
+                name="jalapeno"
+                onChange={updateTopping}
               />
               <label className="form-check-label" for="flexCheckDefault">
                 Jalapeno
