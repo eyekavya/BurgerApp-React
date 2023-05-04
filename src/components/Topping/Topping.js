@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyledTopping } from "./StyledTopping";
 
 function Topping({ toppings, setToppings }) {
