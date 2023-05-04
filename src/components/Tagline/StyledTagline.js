@@ -4,7 +4,6 @@ export const StyledTagline = styled.section`
   h1 {
     font-size: 54px;
     font-family: Permanent Marker, Cursive;
-    // color: #362c2c;
     color: #749be8;
   }
 

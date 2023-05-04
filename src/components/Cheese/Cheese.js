@@ -4,7 +4,7 @@ import { StyledCheese } from "./StyledCheese";
 function Cheese() {
   return (
     <StyledCheese>
-      <div className="wrapper">
+      <div className="wrapper" style={{ height: "156px" }}>
         <h3 className="sub-heading">Extra Cheese</h3>
         <div>
           <div className="form-check">
