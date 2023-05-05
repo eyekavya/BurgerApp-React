@@ -1,7 +1,11 @@
 import React from "react";
 import { StyledCheese } from "./StyledCheese";
 
-function Cheese() {
+function Cheese({ cheese, setCheese }) {
+  const updateCheese = (event) => {
+    setCheese(!cheese);
+  };
+
   return (
     <StyledCheese>
       <div className="wrapper" style={{ height: "156px" }}>
@@ -12,6 +16,8 @@ function Cheese() {
               className="form-check-input"
               type="checkbox"
               value="cheese"
+              checked={cheese}
+              onChange={updateCheese}
               id="flexCheckDefault"
             />
             <label className="form-check-label" for="flexCheckDefault">
