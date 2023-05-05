@@ -7,6 +7,7 @@ import Topping from "./components/Topping/Topping.js";
 import Size from "./components/Size/Size.js";
 import Cheese from "./components/Cheese/Cheese.js";
 import Tab from "./components/Tab/Tab.js";
+import CartBtn from "./components/CartBtn/CartBtn";
 
 function App() {
   const [toppings, setToppings] = useState({
@@ -34,6 +35,7 @@ function App() {
 
             {activeTab === "sizes" && <Size />}
             {activeTab === "cheese" && <Cheese />}
+            <CartBtn />
           </div>
           <div className="image-section">
             <Pizza toppings={toppings} />

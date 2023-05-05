@@ -5,8 +5,6 @@ export const StyledTab = styled.section`
     font-family: "Poppins", sans-serif;
     font-size: 22px;
     width: 9rem;
-    // background-color: #fcbd3f;
-    // color: #000;
     background-color: #fff;
     color: #000;
     font-weight: 500;

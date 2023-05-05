@@ -4,7 +4,7 @@ import { StyledSize } from "./StyledSize";
 function Size() {
   return (
     <StyledSize>
-      <div className="wrapper">
+      <div className="wrapper" style={{ height: "156px" }}>
         <h3 className="sub-heading">Choose Size</h3>
         <div className="flex-size">
           <div>
