@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyledSize } from "./StyledSize";
 
 function Size() {
+  const [size, setSize] = useState("regular");
+
+  const updateSize = (event) => {
+    setSize(event.target.value);
+  };
+
   return (
     <StyledSize>
       <div className="wrapper" style={{ height: "156px" }}>
@@ -12,8 +18,10 @@ function Size() {
               <input
                 className="form-check-input"
                 type="radio"
-                name="flexRadioDefault"
+                value="regular"
+                checked={size === "regular"}
                 id="flexRadioDefault1"
+                onChange={updateSize}
               />
               <label className="form-check-label" for="flexRadioDefault1">
                 Little Buddy
@@ -25,8 +33,10 @@ function Size() {
               <input
                 className="form-check-input"
                 type="radio"
-                name="flexRadioDefault"
+                value="medium"
+                checked={size === "medium"}
                 id="flexRadioDefault1"
+                onChange={updateSize}
               />
               <label className="form-check-label" for="flexRadioDefault1">
                 Happy Medium
@@ -38,8 +48,10 @@ function Size() {
               <input
                 className="form-check-input"
                 type="radio"
-                name="flexRadioDefault"
+                value="large"
+                checked={size === "large"}
                 id="flexRadioDefault1"
+                onChange={updateSize}
               />
               <label className="form-check-label" for="flexRadioDefault1">
                 Super Yum
