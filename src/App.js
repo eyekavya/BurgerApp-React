@@ -21,6 +21,10 @@ function App() {
     jalapeno: false,
   });
   const [activeTab, setActiveTab] = useState("toppings");
+
+  const [size, setSize] = useState("regular");
+
+  const [cheese, setCheese] = useState(false);
   return (
     <>
       <div>
@@ -33,8 +37,10 @@ function App() {
               <Topping toppings={toppings} setToppings={setToppings} />
             )}
 
-            {activeTab === "sizes" && <Size />}
-            {activeTab === "cheese" && <Cheese />}
+            {activeTab === "sizes" && <Size size={size} setSize={setSize} />}
+            {activeTab === "cheese" && (
+              <Cheese cheese={cheese} setCheese={setCheese} />
+            )}
             <CartBtn />
           </div>
           <div className="image-section">

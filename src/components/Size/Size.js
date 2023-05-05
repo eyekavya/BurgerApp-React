@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyledSize } from "./StyledSize";
 
-function Size() {
-  const [size, setSize] = useState("regular");
-
+function Size({ size, setSize }) {
   const updateSize = (event) => {
     setSize(event.target.value);
   };
