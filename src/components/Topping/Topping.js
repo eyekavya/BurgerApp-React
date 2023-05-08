@@ -1,5 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { StyledTopping } from "./StyledTopping";
+import info from "../../images/info.svg";
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 function Topping({ toppings, setToppings }) {
   const updateTopping = (event) => {
@@ -9,7 +13,21 @@ function Topping({ toppings, setToppings }) {
   return (
     <StyledTopping>
       <div className="wrapper">
-        <h3 className="sub-heading">Select Toppings</h3>
+        <h3 className="sub-heading">
+          Select Toppings{" "}
+          <img
+            src={info}
+            alt="INR 45"
+            className="info"
+            data-tooltip-id="app-title"
+          />
+          <ReactTooltip
+            className="info-tooltip"
+            id="app-title"
+            place="right"
+            content="₹45 per topping"
+          />
+        </h3>
         <div className="flex-topping">
           <div>
             <div className="form-check">
