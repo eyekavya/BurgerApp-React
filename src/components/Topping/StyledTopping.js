@@ -15,5 +15,6 @@ export const StyledTopping = styled.section`
   .info-tooltip {
     font-size: 14px;
     padding: 6px;
+    background-color: #000000cf;
   }
 `;
