@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledTopping } from "./StyledTopping";
+import info from "../../images/info.svg";
 
 function Topping({ toppings, setToppings }) {
   const updateTopping = (event) => {
@@ -9,7 +10,12 @@ function Topping({ toppings, setToppings }) {
   return (
     <StyledTopping>
       <div className="wrapper">
-        <h3 className="sub-heading">Select Toppings</h3>
+        <h3 className="sub-heading">
+          Select Toppings{" "}
+          <a>
+            <img src={info} alt="info" className="info" />
+          </a>{" "}
+        </h3>
         <div className="flex-topping">
           <div>
             <div className="form-check">

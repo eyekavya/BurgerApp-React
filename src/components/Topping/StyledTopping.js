@@ -7,4 +7,8 @@ export const StyledTopping = styled.section`
     justify-content: left;
     gap: 3rem;
   }
+
+  .info {
+    cursor: pointer;
+  }
 `;
