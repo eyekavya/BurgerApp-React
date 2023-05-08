@@ -11,4 +11,9 @@ export const StyledTopping = styled.section`
   .info {
     cursor: pointer;
   }
+
+  .info-tooltip {
+    font-size: 14px;
+    padding: 6px;
+  }
 `;
