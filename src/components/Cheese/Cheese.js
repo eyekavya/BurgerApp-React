@@ -23,6 +23,7 @@ function Cheese({ cheese, setCheese }) {
             <label className="form-check-label" for="flexCheckDefault">
               Say Cheese! Add extra please!
             </label>
+            <div className="price-cheese"> @ just ₹50</div>
           </div>
         </div>
       </div>
