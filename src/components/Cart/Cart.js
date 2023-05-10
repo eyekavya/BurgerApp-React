@@ -5,13 +5,7 @@ function Cart() {
   return (
     <StyledCart>
       <div>
-        <nav className="navbar navbar-expand-lg nav">
-          <div className="container-fluid d-flex justify-content-between">
-            <a className="navbar-brand title" href="/">
-              Cheesy Slice
-            </a>
-          </div>
-        </nav>
+        <p>Cart</p>
       </div>
     </StyledCart>
   );
