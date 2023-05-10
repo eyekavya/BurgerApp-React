@@ -18,4 +18,8 @@ export const StyledNavbar = styled.section`
     margin: 1rem;
     cursor: pointer;
   }
+
+  .rounded-pill {
+    font-size: 12px;
+  }
 `;
