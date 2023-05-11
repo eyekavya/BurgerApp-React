@@ -31,17 +31,19 @@ function Cart() {
           </div>
           <div className="total">
             <div className="total-desc">
-              <p>SUBTOTAL</p>
-              <p>TOTAL TAX</p>
+              <p>SUB TOTAL</p>
+              <p>TAX</p>
               <p>GRAND TOTAL</p>
             </div>
             <div className="total-price">
               <p>₹ 548</p>
-              <p>₹ xy</p>
+              <p>₹ 51</p>
               <p>₹ 599</p>
             </div>
           </div>
-          <button>PLACE ORDER</button>
+          <div className="order-btn-container">
+            <button className="btn-general">PLACE ORDER</button>
+          </div>
         </div>
       </div>
     </StyledCart>

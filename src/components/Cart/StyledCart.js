@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledCart = styled.section`
   body {
-    font-family: monospace;
+    font-family: "Poppins", sans-serif;
   }
 
   h2 {
@@ -19,9 +19,9 @@ export const StyledCart = styled.section`
     position: relative;
     border: solid 3px #6e7491;
     padding: 40px 60px;
-    max-width: 800px;
+    max-width: 700px;
     width: 70%;
-    margin: 100px auto 0;
+    margin: 70px auto 0;
     font-size: 17px;
     line-height: 28px;
     transform: rotate(-1deg);
@@ -38,8 +38,40 @@ export const StyledCart = styled.section`
     transform: translateY(4px) rotate(1deg);
   }
 
+  h3 {
+    font-size: 1.3rem;
+    color: #749be8;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+
   .pizza-item,
   .total {
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .pizza-desc {
+    line-height: 1.5;
+  }
+
+  .pizza-desc p {
+    color: #525252;
+    font-size: 1rem;
+    line-height: 0.4;
+  }
+
+  .total-desc,
+  .total-price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .order-btn-container {
+    display: flex;
+    justify-content: center;
   }
 `;
