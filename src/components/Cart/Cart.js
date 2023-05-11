@@ -33,12 +33,12 @@ function Cart() {
             <div className="total-desc">
               <p>SUB TOTAL</p>
               <p>TAX</p>
-              <p>GRAND TOTAL</p>
+              <p className="grand-total">GRAND TOTAL</p>
             </div>
             <div className="total-price">
               <p>₹ 548</p>
               <p>₹ 51</p>
-              <p>₹ 599</p>
+              <p className="grand-total">₹ 599</p>
             </div>
           </div>
           <div className="order-btn-container">

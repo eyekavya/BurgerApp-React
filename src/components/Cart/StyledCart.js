@@ -14,7 +14,6 @@ export const StyledCart = styled.section`
     border-top-right-radius: 23px 130px;
     border-bottom-left-radius: 110px 19px;
     border-bottom-right-radius: 120px 24px;
-
     display: block;
     position: relative;
     border: solid 3px #6e7491;
@@ -62,16 +61,23 @@ export const StyledCart = styled.section`
     line-height: 0.4;
   }
 
-  .total-desc,
-  .total-price {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+  .total {
+    margin: 2rem 0;
+  }
+
+  .total-desc p,
+  .total-price p {
+    margin-bottom: 0;
+    font-weight: 500;
   }
 
   .order-btn-container {
     display: flex;
     justify-content: center;
+  }
+
+  .total .grand-total {
+    font-weight: 700;
+    margin-top: 1rem;
   }
 `;
