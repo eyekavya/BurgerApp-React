@@ -13,7 +13,7 @@ function CartBtn() {
           marginLeft: "-6rem",
         }}
       >
-        <button className="addToCartBtn">Add to Cart</button>
+        <button className="btn-general">Add to Cart</button>
       </div>
     </StyledCartBtn>
   );
