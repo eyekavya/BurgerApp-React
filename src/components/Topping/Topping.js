@@ -25,7 +25,7 @@ function Topping({ toppings, setToppings }) {
             className="info-tooltip"
             id="app-title"
             place="right"
-            content="₹45 per topping"
+            content="₹ 45 per topping"
           />
         </h3>
         <div className="flex-topping">

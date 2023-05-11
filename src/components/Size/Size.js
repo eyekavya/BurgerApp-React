@@ -22,7 +22,7 @@ function Size({ size, setSize }) {
                 onChange={updateSize}
               />
               <label className="form-check-label" for="flexRadioDefault1">
-                Little Buddy <span> ₹99</span>
+                Little Buddy <span> ₹ 99</span>
               </label>
             </div>
           </div>
@@ -37,7 +37,7 @@ function Size({ size, setSize }) {
                 onChange={updateSize}
               />
               <label className="form-check-label" for="flexRadioDefault1">
-                Happy Medium <span> ₹199</span>
+                Happy Medium <span> ₹ 199</span>
               </label>
             </div>
           </div>
@@ -52,7 +52,7 @@ function Size({ size, setSize }) {
                 onChange={updateSize}
               />
               <label className="form-check-label" for="flexRadioDefault1">
-                Super Yum <span> ₹259</span>
+                Super Yum <span> ₹ 259</span>
               </label>
             </div>
           </div>
