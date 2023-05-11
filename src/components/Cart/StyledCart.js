@@ -37,6 +37,12 @@ export const StyledCart = styled.section`
     transform: translateY(4px) rotate(1deg);
   }
 
+  .pizza-item-container {
+    max-height: 257.13px;
+
+    overflow: scroll;
+  }
+
   h3 {
     font-size: 1.3rem;
     color: #749be8;
@@ -44,11 +50,18 @@ export const StyledCart = styled.section`
     margin: 1rem 0;
   }
 
+  /* .pizza-item {
+    width: 90%;
+    margin: 0 auto;
+  } */
+
   .pizza-item,
   .total {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .pizza-desc {
@@ -62,7 +75,7 @@ export const StyledCart = styled.section`
   }
 
   .total {
-    margin: 2rem 0;
+    margin: 2rem auto;
   }
 
   .total-desc p,
