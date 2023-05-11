@@ -6,7 +6,42 @@ function Cart() {
     <StyledCart>
       <div className="wrapper">
         <div class="container">
-          <h1>Crust Me, You Knead This Pizza!</h1>
+          <h2>Crust Me, You Knead This Pizza!</h2>
+          <div className="pizza-item">
+            <div className="pizza-desc">
+              <h3>Pizza #1</h3>
+              <p>Paneer, Corn, Red Pepper</p>
+              <p>Super Yum</p>
+              <p>Extra Cheese: Yup!</p>
+            </div>
+            <div className="pizza-price">
+              <p>₹ 299</p>
+            </div>
+          </div>
+          <div className="pizza-item">
+            <div className="pizza-desc">
+              <h3>Pizza #2</h3>
+              <p>Paneer, Onion</p>
+              <p>Happy Medium</p>
+              <p>Extra Cheese: Nope!</p>
+            </div>
+            <div className="pizza-price">
+              <p>₹ 249</p>
+            </div>
+          </div>
+          <div className="total">
+            <div className="total-desc">
+              <p>SUBTOTAL</p>
+              <p>TOTAL TAX</p>
+              <p>GRAND TOTAL</p>
+            </div>
+            <div className="total-price">
+              <p>₹ 548</p>
+              <p>₹ xy</p>
+              <p>₹ 599</p>
+            </div>
+          </div>
+          <button>PLACE ORDER</button>
         </div>
       </div>
     </StyledCart>

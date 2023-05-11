@@ -5,6 +5,10 @@ export const StyledCart = styled.section`
     font-family: monospace;
   }
 
+  h2 {
+    font-size: 2.25rem;
+  }
+
   .container {
     border-top-left-radius: 37px 140px;
     border-top-right-radius: 23px 130px;
@@ -31,6 +35,11 @@ export const StyledCart = styled.section`
   }
 
   .container:hover {
-    transform: translateY(4px) rotate(-5deg);
+    transform: translateY(4px) rotate(1deg);
+  }
+
+  .pizza-item,
+  .total {
+    display: flex;
   }
 `;
