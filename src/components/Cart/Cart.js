@@ -10,7 +10,10 @@ function Cart() {
           <div className="pizza-item-container">
             <div className="pizza-item">
               <div className="pizza-desc">
-                <h3>Pizza #1</h3>
+                <h3>
+                  Pizza #1
+                  <i class="fa-sharp fa-solid fa-xmark"></i>
+                </h3>
                 <p>Paneer, Corn, Red Pepper</p>
                 <p>Super Yum</p>
                 <p>Extra Cheese: Yup!</p>
@@ -21,7 +24,9 @@ function Cart() {
             </div>
             <div className="pizza-item">
               <div className="pizza-desc">
-                <h3>Pizza #2</h3>
+                <h3>
+                  Pizza #2 <i class="fa-sharp fa-solid fa-xmark"></i>
+                </h3>
                 <p>Paneer, Onion</p>
                 <p>Happy Medium</p>
                 <p>Extra Cheese: Nope!</p>
@@ -32,7 +37,9 @@ function Cart() {
             </div>
             <div className="pizza-item">
               <div className="pizza-desc">
-                <h3>Pizza #2</h3>
+                <h3>
+                  Pizza #3 <i class="fa-sharp fa-solid fa-xmark"></i>
+                </h3>
                 <p>Paneer, Onion</p>
                 <p>Happy Medium</p>
                 <p>Extra Cheese: Nope!</p>

@@ -93,4 +93,9 @@ export const StyledCart = styled.section`
     font-weight: 700;
     margin-top: 1rem;
   }
+
+  h3 i {
+    margin-left: 2rem;
+    cursor: pointer;
+  }
 `;
