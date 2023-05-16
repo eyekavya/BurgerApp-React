@@ -1,11 +1,13 @@
 import React from "react";
 import { StyledNavbar } from "./StyledNavbar";
 import { useNavigate } from "react-router-dom";
+import cart from "../../images/cart.png";
 
 function Navbar() {
   const navigate = useNavigate();
 
   const handleRouting = (route) => {
+    console.log("shivam");
     navigate(route);
   };
 
@@ -21,14 +23,20 @@ function Navbar() {
               Cheesy Slice
             </h2>
             <div>
-              <i
+              {/* <i
                 className="fa-solid fa-cart-shopping cart position-relative"
                 onClick={() => handleRouting("/cart")}
               >
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                   2
                 </span>
-              </i>
+              </i> */}
+              <img
+                src={cart}
+                alt="cart"
+                onClick={() => handleRouting("/cart")}
+                className="cart"
+              />
             </div>
           </div>
         </nav>

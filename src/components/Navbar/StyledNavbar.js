@@ -15,7 +15,7 @@ export const StyledNavbar = styled.section`
 
   .cart {
     font-size: 26px;
-    margin: 1rem;
+    /* margin: 1rem; */
     cursor: pointer;
   }
 
