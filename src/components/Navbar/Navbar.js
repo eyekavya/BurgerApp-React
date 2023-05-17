@@ -47,7 +47,14 @@ function Navbar() {
                   className="cart"
                 />
               ) : (
-                <img src={menu} alt="cart" />
+                <img
+                  src={menu}
+                  alt="menu"
+                  onClick={() => {
+                    setShowCart(true);
+                    handleRouting("/menu");
+                  }}
+                />
               )}
             </div>
           </div>
