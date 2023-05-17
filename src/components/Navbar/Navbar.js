@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyledNavbar } from "./StyledNavbar";
 import { useNavigate } from "react-router-dom";
 import cart from "../../images/cart.png";
+import menu from "../../images/menu.png";
 
 function Navbar() {
+  const [showCart, setShowCart] = useState(true);
+
   const navigate = useNavigate();
 
   const handleRouting = (route) => {
-    console.log("shivam");
     navigate(route);
   };
 
@@ -18,7 +20,10 @@ function Navbar() {
           <div className="container-fluid d-flex justify-content-between">
             <h2
               className="navbar-brand title"
-              onClick={() => handleRouting("/")}
+              onClick={() => {
+                setShowCart(true);
+                handleRouting("/");
+              }}
             >
               Cheesy Slice
             </h2>
@@ -31,12 +36,26 @@ function Navbar() {
                   2
                 </span>
               </i> */}
-              <img
-                src={cart}
-                alt="cart"
-                onClick={() => handleRouting("/cart")}
-                className="cart"
-              />
+              {showCart ? (
+                <img
+                  src={cart}
+                  alt="cart"
+                  onClick={() => {
+                    setShowCart(false);
+                    handleRouting("/cart");
+                  }}
+                  className="cart"
+                />
+              ) : (
+                <img
+                  src={menu}
+                  alt="menu"
+                  onClick={() => {
+                    setShowCart(true);
+                    handleRouting("/menu");
+                  }}
+                />
+              )}
             </div>
           </div>
         </nav>
