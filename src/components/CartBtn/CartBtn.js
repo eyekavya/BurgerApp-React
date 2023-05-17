@@ -1,7 +1,14 @@
 import React from "react";
 import { StyledCartBtn } from "./StyledCartBtn";
+import { useNavigate } from "react-router-dom";
 
 function CartBtn() {
+  const navigate = useNavigate();
+
+  const handleRouting = (route) => {
+    navigate(route);
+  };
+
   return (
     <StyledCartBtn>
       <div
@@ -13,7 +20,14 @@ function CartBtn() {
           marginLeft: "-6rem",
         }}
       >
-        <button className="btn-general">Add to Cart</button>
+        <button
+          className="btn-general"
+          onClick={() => {
+            handleRouting("/cart");
+          }}
+        >
+          Add to Cart
+        </button>
       </div>
     </StyledCartBtn>
   );

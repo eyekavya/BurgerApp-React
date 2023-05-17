@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyledNavbar } from "./StyledNavbar";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import cart from "../../images/cart.png";
 import menu from "../../images/menu.png";
 
 function Navbar() {
-  const [showCart, setShowCart] = useState(true);
-
   const navigate = useNavigate();
+
+  const location = useLocation();
 
   const handleRouting = (route) => {
     navigate(route);
   };
+
+  console.log(location);
 
   return (
     <StyledNavbar>
@@ -21,7 +23,6 @@ function Navbar() {
             <h2
               className="navbar-brand title"
               onClick={() => {
-                setShowCart(true);
                 handleRouting("/");
               }}
             >
@@ -32,16 +33,15 @@ function Navbar() {
                 className="fa-solid fa-cart-shopping cart position-relative"
                 onClick={() => handleRouting("/cart")}
               >
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                   2
                 </span>
               </i> */}
-              {showCart ? (
+              {location.pathname !== "/cart" ? (
                 <img
                   src={cart}
                   alt="cart"
                   onClick={() => {
-                    setShowCart(false);
                     handleRouting("/cart");
                   }}
                   className="cart"
@@ -51,7 +51,6 @@ function Navbar() {
                   src={menu}
                   alt="menu"
                   onClick={() => {
-                    setShowCart(true);
                     handleRouting("/menu");
                   }}
                 />
