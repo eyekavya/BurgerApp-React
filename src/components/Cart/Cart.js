@@ -5,14 +5,14 @@ function Cart() {
   return (
     <StyledCart>
       <div className="wrapper">
-        <div class="container">
+        <div className="container">
           <h2>Crust Me, You Knead This Pizza!</h2>
           <div className="pizza-item-container">
             <div className="pizza-item">
               <div className="pizza-desc">
                 <h3>
                   Pizza #1
-                  <i class="fa-sharp fa-solid fa-xmark"></i>
+                  <i className="fa-sharp fa-solid fa-xmark"></i>
                 </h3>
                 <p>Paneer, Corn, Red Pepper</p>
                 <p>Super Yum</p>
@@ -25,7 +25,7 @@ function Cart() {
             <div className="pizza-item">
               <div className="pizza-desc">
                 <h3>
-                  Pizza #2 <i class="fa-sharp fa-solid fa-xmark"></i>
+                  Pizza #2 <i className="fa-sharp fa-solid fa-xmark"></i>
                 </h3>
                 <p>Paneer, Onion</p>
                 <p>Happy Medium</p>
@@ -38,7 +38,7 @@ function Cart() {
             <div className="pizza-item">
               <div className="pizza-desc">
                 <h3>
-                  Pizza #3 <i class="fa-sharp fa-solid fa-xmark"></i>
+                  Pizza #3 <i className="fa-sharp fa-solid fa-xmark"></i>
                 </h3>
                 <p>Paneer, Onion</p>
                 <p>Happy Medium</p>
