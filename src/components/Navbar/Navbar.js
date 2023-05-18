@@ -13,8 +13,6 @@ function Navbar() {
     navigate(route);
   };
 
-  console.log(location);
-
   return (
     <StyledNavbar>
       <div>
@@ -29,14 +27,6 @@ function Navbar() {
               Cheesy Slice
             </h2>
             <div>
-              {/* <i
-                className="fa-solid fa-cart-shopping cart position-relative"
-                onClick={() => handleRouting("/cart")}
-              >
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  2
-                </span>
-              </i> */}
               {location.pathname !== "/cart" ? (
                 <img
                   src={cart}
