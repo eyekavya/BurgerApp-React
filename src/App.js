@@ -4,10 +4,11 @@ import Navbar from "./components/Navbar/Navbar.js";
 import Cart from "./components/Cart/Cart";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
+import { PizzaProvider } from "./context/pizzaContext";
 
 function App() {
   return (
-    <>
+    <PizzaProvider>
       <div>
         <Router>
           <Navbar />
@@ -18,7 +19,7 @@ function App() {
           </Routes>
         </Router>
       </div>
-    </>
+    </PizzaProvider>
   );
 }
 
