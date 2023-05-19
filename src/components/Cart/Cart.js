@@ -1,7 +1,12 @@
 import React from "react";
 import { StyledCart } from "./StyledCart";
+import { usePizza } from "../../context/pizzaContext";
 
 function Cart() {
+  const { pizza } = usePizza();
+
+  const { toppings, size, cheese } = pizza;
+
   return (
     <StyledCart>
       <div className="wrapper">
@@ -14,38 +19,21 @@ function Cart() {
                   Pizza #1
                   <i className="fa-sharp fa-solid fa-xmark"></i>
                 </h3>
-                <p>Paneer, Corn, Red Pepper</p>
-                <p>Super Yum</p>
-                <p>Extra Cheese: Yup!</p>
+
+                {Object.entries(toppings)
+                  .filter(([key, value]) => value === true)
+                  .map((e, i, a) => (
+                    <span key={i}>
+                      {e}
+                      {a.length - 1 !== i && ","} &nbsp;
+                    </span>
+                  ))}
+
+                <p>{size}</p>
+                <p>Extra Cheese: {cheese ? "Yup!" : "Nope!"}</p>
               </div>
               <div className="pizza-price">
                 <p>₹ 299</p>
-              </div>
-            </div>
-            <div className="pizza-item">
-              <div className="pizza-desc">
-                <h3>
-                  Pizza #2 <i className="fa-sharp fa-solid fa-xmark"></i>
-                </h3>
-                <p>Paneer, Onion</p>
-                <p>Happy Medium</p>
-                <p>Extra Cheese: Nope!</p>
-              </div>
-              <div className="pizza-price">
-                <p>₹ 249</p>
-              </div>
-            </div>
-            <div className="pizza-item">
-              <div className="pizza-desc">
-                <h3>
-                  Pizza #3 <i className="fa-sharp fa-solid fa-xmark"></i>
-                </h3>
-                <p>Paneer, Onion</p>
-                <p>Happy Medium</p>
-                <p>Extra Cheese: Nope!</p>
-              </div>
-              <div className="pizza-price">
-                <p>₹ 249</p>
               </div>
             </div>
           </div>

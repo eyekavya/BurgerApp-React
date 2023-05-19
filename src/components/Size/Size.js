@@ -25,7 +25,7 @@ function Size() {
                 id="flexRadioDefault1"
                 onChange={updateSize}
               />
-              <label className="form-check-label" for="flexRadioDefault1">
+              <label className="form-check-label" htmlFor="flexRadioDefault1">
                 Little Buddy <span> ₹ 99</span>
               </label>
             </div>
