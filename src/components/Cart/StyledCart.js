@@ -68,7 +68,8 @@ export const StyledCart = styled.section`
     line-height: 1.5;
   }
 
-  .pizza-desc p {
+  .pizza-desc p,
+  .pizza-desc span {
     color: #525252;
     font-size: 1rem;
     line-height: 0.4;
