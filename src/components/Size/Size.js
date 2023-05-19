@@ -1,9 +1,13 @@
 import React from "react";
 import { StyledSize } from "./StyledSize";
+import { usePizza } from "../../context/pizzaContext";
 
-function Size({ size, setSize }) {
+function Size() {
+  const { pizza, setPizza } = usePizza();
+  const { size } = pizza;
   const updateSize = (event) => {
-    setSize(event.target.value);
+    setPizza({ ...pizza, size: event.target.value });
+    console.log(pizza);
   };
 
   return (

@@ -9,8 +9,11 @@ import mushroom from "../../images/toppings/mushroom.png";
 import redPepper from "../../images/toppings/redPepper.png";
 import capsicum from "../../images/toppings/capsicum.png";
 import jalapeno from "../../images/toppings/jalapeno.png";
+import { usePizza } from "../../context/pizzaContext";
 
-function Pizza({ toppings }) {
+function Pizza() {
+  const { pizza } = usePizza();
+  const { toppings } = pizza;
   return (
     <StyledPizza>
       <div style={{ position: "relative" }}>
