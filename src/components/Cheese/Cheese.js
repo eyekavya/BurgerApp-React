@@ -1,9 +1,14 @@
 import React from "react";
 import { StyledCheese } from "./StyledCheese";
+import { usePizza } from "../../context/pizzaContext";
 
-function Cheese({ cheese, setCheese }) {
+function Cheese() {
+  const { pizza, setPizza } = usePizza();
+  const { cheese } = pizza;
+
   const updateCheese = (event) => {
-    setCheese(!cheese);
+    setPizza({ ...pizza, cheese: !cheese });
+    console.log(pizza);
   };
 
   return (

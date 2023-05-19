@@ -4,10 +4,21 @@ import { StyledTopping } from "./StyledTopping";
 import info from "../../images/info.svg";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import { usePizza } from "../../context/pizzaContext";
 
-function Topping({ toppings, setToppings }) {
+function Topping() {
+  const { pizza, setPizza } = usePizza();
+  const { toppings } = pizza;
+
   const updateTopping = (event) => {
-    setToppings({ ...toppings, [event.target.name]: event.target.checked });
+    setPizza({
+      ...pizza,
+      toppings: {
+        ...toppings,
+        [event.target.name]: event.target.checked,
+      },
+    });
+    console.log(toppings);
   };
 
   return (
