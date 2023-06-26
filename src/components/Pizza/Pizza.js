@@ -6,7 +6,7 @@ import corn from "../../images/toppings/corn.png";
 import onion from "../../images/toppings/onion.png";
 import tomato from "../../images/toppings/tomato.png";
 import mushroom from "../../images/toppings/mushroom.png";
-import redPepper from "../../images/toppings/redPepper.png";
+import redpepper from "../../images/toppings/redpepper.png";
 import capsicum from "../../images/toppings/capsicum.png";
 import jalapeno from "../../images/toppings/jalapeno.png";
 import { usePizza } from "../../context/pizzaContext";
@@ -45,7 +45,7 @@ function Pizza() {
 
         {toppings.redpepper && (
           <img
-            src={redPepper}
+            src={redpepper}
             alt="redpepper"
             className="pizza-img topping-img"
           />
