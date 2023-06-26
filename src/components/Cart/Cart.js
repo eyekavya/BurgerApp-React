@@ -16,20 +16,27 @@ function Cart() {
             <div className="pizza-item">
               <div className="pizza-desc">
                 <h3>
-                  Pizza #1
+                  Your Custom Pizza
                   <i className="fa-sharp fa-solid fa-xmark"></i>
                 </h3>
+                <p style={{ marginBottom: "0.5rem" }}>
+                  {Object.entries(toppings)
+                    .filter(([key, value]) => value === true)
+                    .map((e, i, a) => (
+                      <span
+                        key={i}
+                        style={{
+                          lineHeight: "1.5rem",
+                          display: "inline-block",
+                        }}
+                      >
+                        {e}
+                        {a.length - 1 !== i && ","} &nbsp;
+                      </span>
+                    ))}
+                </p>
 
-                {Object.entries(toppings)
-                  .filter(([key, value]) => value === true)
-                  .map((e, i, a) => (
-                    <span key={i}>
-                      {e}
-                      {a.length - 1 !== i && ","} &nbsp;
-                    </span>
-                  ))}
-
-                <p>{size}</p>
+                <p style={{ textTransform: "capitalize" }}>{size}</p>
                 <p>Extra Cheese: {cheese ? "Yup!" : "Nope!"}</p>
               </div>
               <div className="pizza-price">

@@ -40,7 +40,7 @@ export const StyledCart = styled.section`
   .pizza-item-container {
     max-height: 257.13px;
 
-    overflow: scroll;
+    overflow: none;
   }
 
   h3 {
@@ -66,13 +66,14 @@ export const StyledCart = styled.section`
 
   .pizza-desc {
     line-height: 1.5;
+    width: 90%;
   }
 
   .pizza-desc p,
   .pizza-desc span {
     color: #525252;
     font-size: 1rem;
-    line-height: 0.4;
+    line-height: 0.5;
   }
 
   .total {
