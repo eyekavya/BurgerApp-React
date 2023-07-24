@@ -8,7 +8,6 @@ export function usePizza() {
 }
 
 export function PizzaProvider({ children }) {
-  console.log(children);
   const [pizza, setPizza] = useState({
     toppings: {
       paneer: false,
@@ -24,9 +23,19 @@ export function PizzaProvider({ children }) {
     cheese: false,
   });
 
+  const [toppingPrice, setToppingPrice] = useState(0);
+  const [sizePrice, setSizePrice] = useState(99);
+  const [cheesePrice, setCheesePrice] = useState(0);
+
   const value = {
     pizza,
     setPizza,
+    toppingPrice,
+    setToppingPrice,
+    sizePrice,
+    setSizePrice,
+    cheesePrice,
+    setCheesePrice,
   };
 
   return (
