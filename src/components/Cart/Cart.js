@@ -7,6 +7,20 @@ function Cart() {
 
   const { toppings, size, cheese } = pizza;
 
+  // const calcToppingPrice = (toppings) => {
+  //   Object.keys(toppings).filter((key) => {
+  //     let toppingsArr = toppings[key];
+  //     return toppingsArr.length * 45;
+  //   });
+  // };
+
+  // console.log(
+  //   Object.keys(toppings).filter((key) => {
+  //     let toppingsArr = toppings[key];
+  //     return toppingsArr;
+  //   })
+  // );
+
   return (
     <StyledCart>
       <div className="wrapper">
@@ -40,7 +54,7 @@ function Cart() {
                 <p>Extra Cheese: {cheese ? "Yup!" : "Nope!"}</p>
               </div>
               <div className="pizza-price">
-                <p>₹ 299</p>
+                <p>₹ {Object.keys(toppings)?.length * 45} </p>
               </div>
             </div>
           </div>
@@ -58,7 +72,12 @@ function Cart() {
             </div>
           </div>
           <div className="order-btn-container">
-            <button className="btn-general">PLACE ORDER</button>
+            <button
+              className="btn-general"
+              // onClick={calcToppingPrice}
+            >
+              PLACE ORDER
+            </button>
           </div>
         </div>
       </div>
