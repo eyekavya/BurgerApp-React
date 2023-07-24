@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useEffect } from "react";
 import { StyledTopping } from "./StyledTopping";
 import info from "../../images/info.svg";
 import "react-tooltip/dist/react-tooltip.css";
@@ -7,7 +8,7 @@ import { Tooltip as ReactTooltip } from "react-tooltip";
 import { usePizza } from "../../context/pizzaContext";
 
 function Topping() {
-  const { pizza, setPizza } = usePizza();
+  const { pizza, setPizza, setToppingPrice } = usePizza();
   const { toppings } = pizza;
 
   const updateTopping = (event) => {
@@ -18,8 +19,15 @@ function Topping() {
         [event.target.name]: event.target.checked,
       },
     });
-    console.log(toppings);
   };
+
+  useEffect(() => {
+    let selectedTopping = Object.keys(toppings).filter((key) => {
+      return toppings[key];
+    });
+
+    setToppingPrice(selectedTopping.length * 45);
+  }, [pizza]);
 
   return (
     <StyledTopping>
