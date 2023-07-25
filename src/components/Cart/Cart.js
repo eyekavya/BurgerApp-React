@@ -7,6 +7,10 @@ function Cart() {
 
   const { toppings, size, cheese } = pizza;
 
+  let subTotal = toppingPrice + sizePrice + cheesePrice;
+  let tax = Math.round(subTotal * (18 / 100));
+  let grandTotal = Math.round(subTotal + tax);
+
   return (
     <StyledCart>
       <div className="wrapper">
@@ -40,9 +44,9 @@ function Cart() {
                 <p>Extra Cheese: {cheese ? "Yup!" : "Nope!"}</p>
               </div>
               <div className="pizza-price">
-                <p>{toppingPrice}</p>
-                <p>{sizePrice}</p>
-                <p>{cheesePrice}</p>
+                <p>₹ {toppingPrice}</p>
+                <p>₹ {sizePrice}</p>
+                <p>₹ {cheesePrice}</p>
               </div>
             </div>
           </div>
@@ -54,9 +58,9 @@ function Cart() {
               <p className="grand-total">GRAND TOTAL</p>
             </div>
             <div className="total-price">
-              <p>₹ 548</p>
-              <p>₹ 51</p>
-              <p className="grand-total">₹ 599</p>
+              <p>₹ {subTotal}</p>
+              <p>₹ {tax}</p>
+              <p className="grand-total">₹ {grandTotal}</p>
             </div>
           </div>
           <div className="order-btn-container">
