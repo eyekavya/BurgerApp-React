@@ -10,7 +10,7 @@ export const StyledCart = styled.section`
   }
 
   .container {
-    border-top-left-radius: 37px 140px;
+    border-top-left-radius: 120px 140px;
     border-top-right-radius: 23px 130px;
     border-bottom-left-radius: 110px 19px;
     border-bottom-right-radius: 120px 24px;
