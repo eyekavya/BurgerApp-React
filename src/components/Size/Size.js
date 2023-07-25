@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { StyledSize } from "./StyledSize";
 import { usePizza } from "../../context/pizzaContext";
 
 function Size() {
-  const { pizza, setPizza } = usePizza();
+  const { pizza, setPizza, setSizePrice } = usePizza();
   const { size } = pizza;
   const updateSize = (event) => {
     setPizza({ ...pizza, size: event.target.value });
     console.log(pizza);
   };
+
+  useEffect(() => {
+    let selectedSize = pizza.size;
+    console.log(selectedSize);
+    selectedSize === "medium"
+      ? setSizePrice(199)
+      : selectedSize === "large"
+      ? setSizePrice(259)
+      : setSizePrice(99);
+  }, [pizza]);
 
   return (
     <StyledSize>
