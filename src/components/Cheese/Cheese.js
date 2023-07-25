@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { StyledCheese } from "./StyledCheese";
 import { usePizza } from "../../context/pizzaContext";
 
 function Cheese() {
-  const { pizza, setPizza } = usePizza();
+  const { pizza, setPizza, setCheesePrice } = usePizza();
   const { cheese } = pizza;
 
   const updateCheese = (event) => {
     setPizza({ ...pizza, cheese: !cheese });
-    console.log(pizza);
   };
+
+  useEffect(() => {
+    let selectedCheese = pizza.cheese;
+    console.log(selectedCheese);
+    selectedCheese ? setCheesePrice(50) : setCheesePrice(0);
+  }, [pizza]);
 
   return (
     <StyledCheese>
