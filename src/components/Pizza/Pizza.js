@@ -19,34 +19,18 @@ function Pizza() {
       <div style={{ position: "relative" }}>
         <img src={pizzaBase} alt="pizza base" className="pizza-img base-img" />
 
-        {toppings.paneer && (
-          <img src={paneer} alt="paneer" className="pizza-img topping-img" />
-        )}
-
-        {toppings.corn && (
-          <img src={corn} alt="corn" className="pizza-img topping-img" />
-        )}
-
-        {toppings.onion && (
-          <img src={onion} alt="onion" className="pizza-img topping-img" />
-        )}
-
-        {toppings.tomato && (
-          <img src={tomato} alt="tomato" className="pizza-img topping-img" />
+        {toppings.jalapeno && (
+          <img
+            src={jalapeno}
+            alt="jalapeno"
+            className="pizza-img topping-img"
+          />
         )}
 
         {toppings.mushroom && (
           <img
             src={mushroom}
             alt="mushroom"
-            className="pizza-img topping-img"
-          />
-        )}
-
-        {toppings.redpepper && (
-          <img
-            src={redpepper}
-            alt="redpepper"
             className="pizza-img topping-img"
           />
         )}
@@ -59,12 +43,28 @@ function Pizza() {
           />
         )}
 
-        {toppings.jalapeno && (
+        {toppings.tomato && (
+          <img src={tomato} alt="tomato" className="pizza-img topping-img" />
+        )}
+
+        {toppings.onion && (
+          <img src={onion} alt="onion" className="pizza-img topping-img" />
+        )}
+
+        {toppings.redpepper && (
           <img
-            src={jalapeno}
-            alt="jalapeno"
+            src={redpepper}
+            alt="redpepper"
             className="pizza-img topping-img"
           />
+        )}
+
+        {toppings.paneer && (
+          <img src={paneer} alt="paneer" className="pizza-img topping-img" />
+        )}
+
+        {toppings.corn && (
+          <img src={corn} alt="corn" className="pizza-img topping-img" />
         )}
       </div>
     </StyledPizza>
