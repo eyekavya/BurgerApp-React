@@ -3,7 +3,7 @@ import { StyledCart } from "./StyledCart";
 import { usePizza } from "../../context/pizzaContext";
 
 function Cart() {
-  const { pizza, toppingPrice, sizePrice } = usePizza();
+  const { pizza, toppingPrice, sizePrice, cheesePrice } = usePizza();
 
   const { toppings, size, cheese } = pizza;
 
@@ -42,6 +42,7 @@ function Cart() {
               <div className="pizza-price">
                 <p>{toppingPrice}</p>
                 <p>{sizePrice}</p>
+                <p>{cheesePrice}</p>
               </div>
             </div>
           </div>
