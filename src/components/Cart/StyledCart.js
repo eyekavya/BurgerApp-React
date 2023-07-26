@@ -70,7 +70,8 @@ export const StyledCart = styled.section`
   }
 
   .pizza-desc p,
-  .pizza-desc span {
+  .pizza-desc span,
+  .pizza-price {
     color: #525252;
     font-size: 1rem;
     line-height: 0.5;
