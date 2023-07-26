@@ -11,6 +11,7 @@ export const StyledNavbar = styled.section`
     color: #fff;
     font-size: 38px;
     font-weight: 700;
+    cursor: pointer;
   }
 
   .cart {
@@ -21,5 +22,9 @@ export const StyledNavbar = styled.section`
 
   .rounded-pill {
     font-size: 12px;
+  }
+
+  .menu {
+    cursor: pointer;
   }
 `;

@@ -43,6 +43,7 @@ function Navbar() {
                   onClick={() => {
                     handleRouting("/menu");
                   }}
+                  className="menu"
                 />
               )}
             </div>
