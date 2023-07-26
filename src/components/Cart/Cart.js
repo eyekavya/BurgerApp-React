@@ -1,15 +1,22 @@
 import React from "react";
 import { StyledCart } from "./StyledCart";
 import { usePizza } from "../../context/pizzaContext";
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
-  const { pizza, toppingPrice, sizePrice, cheesePrice } = usePizza();
+  const { pizza, setPizza, toppingPrice, sizePrice, cheesePrice } = usePizza();
 
   const { toppings, size, cheese } = pizza;
 
   let subTotal = toppingPrice + sizePrice + cheesePrice;
   let tax = Math.round(subTotal * (18 / 100));
   let grandTotal = Math.round(subTotal + tax);
+
+  const navigate = useNavigate();
+
+  const handleRouting = (route) => {
+    navigate(route);
+  };
 
   return (
     <StyledCart>
@@ -21,7 +28,26 @@ function Cart() {
               <div className="pizza-desc">
                 <h3>
                   Your Custom Pizza
-                  <i className="fa-sharp fa-solid fa-xmark"></i>
+                  <i
+                    className="fa-sharp fa-solid fa-xmark"
+                    onClick={() => {
+                      handleRouting("/");
+                      setPizza({
+                        toppings: {
+                          paneer: false,
+                          corn: false,
+                          onion: false,
+                          tomato: false,
+                          mushroom: false,
+                          redpepper: false,
+                          capsicum: false,
+                          jalapeno: false,
+                        },
+                        size: "regular",
+                        cheese: false,
+                      });
+                    }}
+                  ></i>
                 </h3>
                 <p style={{ marginBottom: "0.5rem" }}>
                   {Object.entries(toppings)
