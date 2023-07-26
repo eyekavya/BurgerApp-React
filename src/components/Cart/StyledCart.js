@@ -59,7 +59,7 @@ export const StyledCart = styled.section`
   .total {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
     width: 90%;
     margin: 0 auto;
   }
@@ -82,7 +82,8 @@ export const StyledCart = styled.section`
   }
 
   .total-desc p,
-  .total-price p {
+  .total-price p,
+  .pizza-price {
     margin-bottom: 0;
     font-weight: 500;
   }
