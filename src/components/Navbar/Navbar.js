@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { StyledNavbar } from "./StyledNavbar";
 import { useLocation, useNavigate } from "react-router-dom";
 import cart from "../../images/cart.png";
 import menu from "../../images/menu.png";
+import { usePizza } from "../../context/pizzaContext";
 
 function Navbar() {
+  const [cartDisabled, setCartDisabled] = useState(true);
+
+  const { pizza } = usePizza();
+  const { toppings } = pizza;
+
   const navigate = useNavigate();
 
   const location = useLocation();
@@ -12,6 +18,13 @@ function Navbar() {
   const handleRouting = (route) => {
     navigate(route);
   };
+
+  useEffect(() => {
+    let selectedTopping = Object.keys(toppings).filter((key) => {
+      return toppings[key];
+    });
+    selectedTopping.length > 0 ? setCartDisabled(false) : setCartDisabled(true);
+  }, [toppings]);
 
   return (
     <StyledNavbar>
@@ -31,10 +44,12 @@ function Navbar() {
                 <img
                   src={cart}
                   alt="cart"
+                  className="cart"
                   onClick={() => {
                     handleRouting("/cart");
                   }}
-                  className="cart"
+                  disabled={cartDisabled}
+                  style={cartDisabled ? { cursor: "not-allowed" } : {}}
                 />
               ) : (
                 <img
@@ -43,6 +58,7 @@ function Navbar() {
                   onClick={() => {
                     handleRouting("/menu");
                   }}
+                  className="menu"
                 />
               )}
             </div>
