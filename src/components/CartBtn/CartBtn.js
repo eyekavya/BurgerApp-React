@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { StyledCartBtn } from "./StyledCartBtn";
 import { useNavigate } from "react-router-dom";
+import { usePizza } from "../../context/pizzaContext";
 
 function CartBtn() {
+  const [addBtnDisabled, setAddBtnDisabled] = useState(true);
+
+  const { pizza } = usePizza();
+  const { toppings } = pizza;
   const navigate = useNavigate();
 
   const handleRouting = (route) => {
     navigate(route);
   };
+
+  useEffect(() => {
+    let selectedTopping = Object.keys(toppings).filter((key) => {
+      return toppings[key];
+    });
+    selectedTopping.length > 0
+      ? setAddBtnDisabled(false)
+      : setAddBtnDisabled(true);
+  }, [toppings]);
 
   return (
     <StyledCartBtn>
@@ -25,6 +39,8 @@ function CartBtn() {
           onClick={() => {
             handleRouting("/cart");
           }}
+          disabled={addBtnDisabled}
+          style={addBtnDisabled ? { cursor: "not-allowed" } : {}}
         >
           Add to Cart
         </button>
