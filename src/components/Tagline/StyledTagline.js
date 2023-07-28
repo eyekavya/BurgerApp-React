@@ -15,4 +15,17 @@ export const StyledTagline = styled.section`
     font-style: italic;
     margin-top: 1rem;
   }
+
+  @media screen and (max-width: 720px) {
+    h1 {
+      font-size: 44px;
+      text-align: center;
+      line-height: 1;
+    }
+
+    h2 {
+      font-size: 18px;
+      line-height: 1;
+    }
+  }
 `;

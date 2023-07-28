@@ -17,4 +17,14 @@ export const StyledPizza = styled.section`
     right: 60px;
     top: 16px;
   }
+
+  @media screen and (max-width: 720px) {
+    .pizza-img {
+      margin-right: 0;
+      max-width: 350px;
+      position: relative;
+      display: block;
+      margin: 1rem auto;
+    }
+  }
 `;

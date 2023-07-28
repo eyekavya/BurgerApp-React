@@ -31,4 +31,12 @@ export const StyledTab = styled.section`
   .active {
     background-color: #fcbd3f;
   }
+
+  @media screen and (max-width: 720px) {
+    .tab-btn {
+      font-size: 17px;
+      width: 7rem;
+      margin: 2rem auto;
+    }
+  }
 `;
