@@ -39,7 +39,6 @@ export const StyledCart = styled.section`
 
   .pizza-item-container {
     max-height: 257.13px;
-
     overflow: none;
   }
 
@@ -101,5 +100,28 @@ export const StyledCart = styled.section`
   h3 i {
     margin-left: 2rem;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 720px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    h3 i {
+      margin-left: 0.7rem;
+    }
+
+    .container {
+      width: 90%;
+      padding: 60px 40px;
+    }
+
+    .pizza-desc {
+      max-width: fit-content;
+    }
   }
 `;

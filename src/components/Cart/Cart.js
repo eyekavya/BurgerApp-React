@@ -49,25 +49,27 @@ function Cart() {
                     }}
                   ></i>
                 </h3>
-                <p style={{ marginBottom: "0.5rem" }}>
-                  {Object.entries(toppings)
-                    .filter(([key, value]) => value === true)
-                    .map((e, i, a) => (
-                      <span
-                        key={i}
-                        style={{
-                          lineHeight: "1.5rem",
-                          display: "inline-block",
-                        }}
-                      >
-                        {e}
-                        {a.length - 1 !== i && ","} &nbsp;
-                      </span>
-                    ))}
-                </p>
+                <div className="pizza-desc-mq">
+                  <p style={{ marginBottom: "0.5rem" }}>
+                    {Object.entries(toppings)
+                      .filter(([key, value]) => value === true)
+                      .map((e, i, a) => (
+                        <span
+                          key={i}
+                          style={{
+                            lineHeight: "1.5rem",
+                            display: "inline-block",
+                          }}
+                        >
+                          {e}
+                          {a.length - 1 !== i && ","} &nbsp;
+                        </span>
+                      ))}
+                  </p>
 
-                <p style={{ textTransform: "capitalize" }}>{size}</p>
-                <p>Extra Cheese: {cheese ? "Yup!" : "Nope!"}</p>
+                  <p style={{ textTransform: "capitalize" }}>{size}</p>
+                  <p>Extra Cheese: {cheese ? "Yup!" : "Nope!"}</p>
+                </div>
               </div>
               <div className="pizza-price">
                 <p>₹ {toppingPrice}</p>
