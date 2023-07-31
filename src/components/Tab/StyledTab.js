@@ -38,5 +38,8 @@ export const StyledTab = styled.section`
       width: 7rem;
       margin: 2rem auto;
     }
+    .btnCenter {
+      text-align: center;
+    }
   }
 `;

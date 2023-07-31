@@ -26,6 +26,7 @@ export const StyledTagline = styled.section`
     h2 {
       font-size: 18px;
       line-height: 1;
+      text-align: center;
     }
   }
 `;

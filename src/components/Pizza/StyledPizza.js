@@ -22,9 +22,11 @@ export const StyledPizza = styled.section`
     .pizza-img {
       margin-right: 0;
       max-width: 350px;
-      position: relative;
       display: block;
       margin: 1rem auto;
+      top: 16px;
+      right: 50%;
+      transform: translateX(50%);
     }
   }
 `;

@@ -73,7 +73,11 @@ export const StyledCart = styled.section`
   .pizza-price {
     color: #525252;
     font-size: 1rem;
-    line-height: 0.5;
+    /* line-height: 0.5; */
+  }
+
+  .pizza-desc span:first-child {
+    line-height: 2rem;
   }
 
   .total {
@@ -117,11 +121,29 @@ export const StyledCart = styled.section`
 
     .container {
       width: 90%;
-      padding: 60px 40px;
+      padding: 45px 20px;
+      border-top-left-radius: 37px 140px;
+      transform: none;
+      transition: none;
+    }
+
+    .container:hover {
+      transform: none;
+    }
+
+    .container:hover {
+      transform: none;
     }
 
     .pizza-desc {
-      max-width: fit-content;
+      // max-width: fit-content;
+      max-width: 13rem;
+    }
+    .pizza-desc p,
+    .pizza-desc span,
+    .pizza-price {
+      font-size: 14px;
+      /* line-height: 0.2rem; */
     }
   }
 `;

@@ -1,9 +1,12 @@
 import React from "react";
 import { StyledCart } from "./StyledCart";
 import { usePizza } from "../../context/pizzaContext";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function Cart() {
+  const location = useLocation();
+
   const { pizza, setPizza, toppingPrice, sizePrice, cheesePrice } = usePizza();
 
   const { toppings, size, cheese } = pizza;
@@ -17,6 +20,12 @@ function Cart() {
   const handleRouting = (route) => {
     navigate(route);
   };
+
+  useEffect(() => {
+    if (location.pathname === "/cart" && toppingPrice === 0) {
+      handleRouting("/");
+    }
+  }, []);
 
   return (
     <StyledCart>
@@ -50,14 +59,19 @@ function Cart() {
                   ></i>
                 </h3>
                 <div className="pizza-desc-mq">
-                  <p style={{ marginBottom: "0.5rem" }}>
+                  <p
+                    style={{
+                      marginBottom: "0.9rem",
+                      textTransform: "capitalize",
+                    }}
+                  >
                     {Object.entries(toppings)
                       .filter(([key, value]) => value === true)
                       .map((e, i, a) => (
                         <span
                           key={i}
                           style={{
-                            lineHeight: "1.5rem",
+                            lineHeight: "1.25rem",
                             display: "inline-block",
                           }}
                         >
