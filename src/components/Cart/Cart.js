@@ -1,9 +1,12 @@
 import React from "react";
 import { StyledCart } from "./StyledCart";
 import { usePizza } from "../../context/pizzaContext";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function Cart() {
+  const location = useLocation();
+
   const { pizza, setPizza, toppingPrice, sizePrice, cheesePrice } = usePizza();
 
   const { toppings, size, cheese } = pizza;
@@ -17,6 +20,12 @@ function Cart() {
   const handleRouting = (route) => {
     navigate(route);
   };
+
+  useEffect(() => {
+    if (location.pathname === "/cart" && toppingPrice === 0) {
+      handleRouting("/");
+    }
+  }, []);
 
   return (
     <StyledCart>
@@ -49,25 +58,32 @@ function Cart() {
                     }}
                   ></i>
                 </h3>
-                <p style={{ marginBottom: "0.5rem" }}>
-                  {Object.entries(toppings)
-                    .filter(([key, value]) => value === true)
-                    .map((e, i, a) => (
-                      <span
-                        key={i}
-                        style={{
-                          lineHeight: "1.5rem",
-                          display: "inline-block",
-                        }}
-                      >
-                        {e}
-                        {a.length - 1 !== i && ","} &nbsp;
-                      </span>
-                    ))}
-                </p>
+                <div className="pizza-desc-mq">
+                  <p
+                    style={{
+                      marginBottom: "0.9rem",
+                      textTransform: "capitalize",
+                    }}
+                  >
+                    {Object.entries(toppings)
+                      .filter(([key, value]) => value === true)
+                      .map((e, i, a) => (
+                        <span
+                          key={i}
+                          style={{
+                            lineHeight: "1.25rem",
+                            display: "inline-block",
+                          }}
+                        >
+                          {e}
+                          {a.length - 1 !== i && ","} &nbsp;
+                        </span>
+                      ))}
+                  </p>
 
-                <p style={{ textTransform: "capitalize" }}>{size}</p>
-                <p>Extra Cheese: {cheese ? "Yup!" : "Nope!"}</p>
+                  <p style={{ textTransform: "capitalize" }}>{size}</p>
+                  <p>Extra Cheese: {cheese ? "Yup!" : "Nope!"}</p>
+                </div>
               </div>
               <div className="pizza-price">
                 <p>₹ {toppingPrice}</p>

@@ -50,7 +50,7 @@ function Size() {
                 id="flexRadioDefault1"
                 onChange={updateSize}
               />
-              <label className="form-check-label" for="flexRadioDefault1">
+              <label className="form-check-label" htmlFor="flexRadioDefault1">
                 Happy Medium <span> ₹ 199</span>
               </label>
             </div>
@@ -65,7 +65,7 @@ function Size() {
                 id="flexRadioDefault1"
                 onChange={updateSize}
               />
-              <label className="form-check-label" for="flexRadioDefault1">
+              <label className="form-check-label" htmlFor="flexRadioDefault1">
                 Super Yum <span> ₹ 259</span>
               </label>
             </div>

@@ -17,4 +17,10 @@ export const StyledTopping = styled.section`
     padding: 6px;
     background-color: #000000cf;
   }
+
+  @media screen and (max-width: 720px) {
+    .flex-topping {
+      justify-content: center;
+    }
+  }
 `;

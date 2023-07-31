@@ -30,7 +30,7 @@ function Cheese() {
               onChange={updateCheese}
               id="flexCheckDefault"
             />
-            <label className="form-check-label" for="flexCheckDefault">
+            <label className="form-check-label" htmlFor="flexCheckDefault">
               Say Cheese! Add extra please!
             </label>
             <div className="price-cheese"> @ just ₹ 50</div>

@@ -59,7 +59,7 @@ function Topping() {
                 name="paneer"
                 onChange={updateTopping}
               />
-              <label className="form-check-label" for="flexCheckDefault">
+              <label className="form-check-label" htmlFor="flexCheckDefault">
                 Paneer
               </label>
             </div>
@@ -73,7 +73,7 @@ function Topping() {
                 name="corn"
                 onChange={updateTopping}
               />
-              <label className="form-check-label" for="flexCheckDefault">
+              <label className="form-check-label" htmlFor="flexCheckDefault">
                 Corn
               </label>
             </div>
@@ -87,7 +87,7 @@ function Topping() {
                 name="onion"
                 onChange={updateTopping}
               />
-              <label className="form-check-label" for="flexCheckDefault">
+              <label className="form-check-label" htmlFor="flexCheckDefault">
                 Onion
               </label>
             </div>
@@ -101,7 +101,7 @@ function Topping() {
                 name="tomato"
                 onChange={updateTopping}
               />
-              <label className="form-check-label" for="flexCheckDefault">
+              <label className="form-check-label" htmlFor="flexCheckDefault">
                 Tomato
               </label>
             </div>
@@ -116,7 +116,7 @@ function Topping() {
                 name="mushroom"
                 onChange={updateTopping}
               />
-              <label className="form-check-label" for="flexCheckDefault">
+              <label className="form-check-label" htmlFor="flexCheckDefault">
                 Mushroom
               </label>
             </div>
@@ -130,7 +130,7 @@ function Topping() {
                 name="redpepper"
                 onChange={updateTopping}
               />
-              <label className="form-check-label" for="flexCheckDefault">
+              <label className="form-check-label" htmlFor="flexCheckDefault">
                 Red Pepper
               </label>
             </div>
@@ -144,7 +144,7 @@ function Topping() {
                 name="capsicum"
                 onChange={updateTopping}
               />
-              <label className="form-check-label" for="flexCheckDefault">
+              <label className="form-check-label" htmlFor="flexCheckDefault">
                 Capsicum
               </label>
             </div>
@@ -158,7 +158,7 @@ function Topping() {
                 name="jalapeno"
                 onChange={updateTopping}
               />
-              <label className="form-check-label" for="flexCheckDefault">
+              <label className="form-check-label" htmlFor="flexCheckDefault">
                 Jalapeno
               </label>
             </div>

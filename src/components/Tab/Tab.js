@@ -8,7 +8,7 @@ function Tab({ activeTab, setActiveTab }) {
 
   return (
     <StyledTab>
-      <div className="wrapper">
+      <div className="wrapper btnCenter">
         <button
           // point to be noted my lord
           className={`tab-btn topping-btn ${

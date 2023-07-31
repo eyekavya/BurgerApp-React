@@ -27,4 +27,10 @@ export const StyledNavbar = styled.section`
   .menu {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 720px) {
+    .title {
+      font-size: 30px;
+    }
+  }
 `;
