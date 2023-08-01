@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import { StyledCart } from "./StyledCart";
 import { usePizza } from "../../context/pizzaContext";

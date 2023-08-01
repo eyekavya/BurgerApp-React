@@ -14,6 +14,7 @@ function Cheese() {
     let selectedCheese = pizza.cheese;
     console.log(selectedCheese);
     selectedCheese ? setCheesePrice(50) : setCheesePrice(0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pizza]);
 
   return (

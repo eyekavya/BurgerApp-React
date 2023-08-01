@@ -18,6 +18,7 @@ function Size() {
       : selectedSize === "large"
       ? setSizePrice(259)
       : setSizePrice(99);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pizza]);
 
   return (
