@@ -21,3 +21,38 @@ Chessy Slice lets you design your favourite pizza with an interactive UI. Choose
 - 🧀 **Cheesy Choices:** Decide whether you like some cheese, or go cheese-free—it's your call!
 - 🛒 **Seamless Cart Integration:** Add your customized creation to the cart and keep track of your delicious selections.
 - 💸 **Real-time Total:** Watch your total amount update dynamically as you create the ultimate pizza experience.
+
+## Demo
+
+![Chessy Slice Demo](https://drive.google.com/file/d/1m9sMv3QX0TFCdHcTKuGg8Aa8_akBpwfB/view?usp=sharing)
+
+[View Demo](https://cheesyslice.netlify.app/)
+
+## Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/eyekavya/PizzaApp-React.git
+   ```
+
+2. **Install dependencies::**
+
+   ```bash
+   cd PizzaApp-React
+   npm install
+   ```
+
+3. **Run the app::**
+
+   ```bash
+   npm start
+   ```
+
+4. **Open in your browser:**
+
+Visit http://localhost:3000 to start customizing your pizza!
+
+## Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
