@@ -24,7 +24,7 @@ Chessy Slice lets you design your favourite pizza with an interactive UI. Choose
 
 ## Demo
 
-![Chessy Slice Demo](https://drive.google.com/file/d/1m9sMv3QX0TFCdHcTKuGg8Aa8_akBpwfB/view?usp=sharing)
+![Chessy Slice Demo](https://github.com/eyekavya/PizzaApp-React/blob/master/public/screenrecord/cheesyslice-gif.gif)
 
 [View Demo](https://cheesyslice.netlify.app/)
 
