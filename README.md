@@ -1,4 +1,4 @@
-# Chessy Slice 🍕
+# Cheesy Slice 🍕
 
 Welcome to Chessy Slice, your go-to React-based pizza customization app!
 
